@@ -23,14 +23,15 @@
                 font-weight: 900;
                 font-size:30px;
             }
-            ul {
+            .menuUl {
                 display: flex;
             }
-            li {
+            .menuLi {
                 display: inline; /* 또는 display: inline-block; */
                 margin-right: 40px; /* 각 리스트 아이템 사이의 여백 조절 */         
                 margin-top: 15px;
                 font-size: 20px;
+            
         
 
 
@@ -125,60 +126,91 @@
                 margin-left:320px;
             }
 
+
+            .menuP {
+                font-size: 25px;
+                margin-left: 50px;
+                margin-top:40px;
+            }
+
+            .myPageLi{
+                font-size:20px;
+                margin:30px;
+                list-style: circle;
+                margin-left:70px;
+
+                
+            }
+            .myPageContentDiv {
+                display: inline-block;
+                width:1000px;
+                height:800px;
+                padding-left: 50px;
+            }
+            .menuArea  {
+                border:1px solid;
+                width:350px;
+                height: 800px;
+                border-radius: 10px;
+            }
+
+            .myPageBox {
+                display: flex;
+                justify-content: center;
+                margin-top:100px
+            }
+
+            .menuArea, .myPageContentDiv {
+
+            }
+
+            .myPageUl {
+                margin-bottom: 70px;
+            }
         </style>
 <div class="menu">
-        <ul>
-            <li id="subject">Hello World</li>
-            <li>메뉴1</li>
-            <li>메뉴1</li>
-            <li>메뉴1</li>
-            <li>메뉴1</li>
+        <ul class="menuUl">
+            <li class="menuLi" id="subject">Hello World</li>
+            <li class="menuLi">메뉴1</li>
+            <li class="menuLi">메뉴1</li>
+            <li class="menuLi">메뉴1</li>
+            <li class="menuLi">메뉴1</li>
             <fieldset class="search">
-            <li id="sForm">검색</li>
+            <li class="menuLi" id="sForm">검색</li>
             </fieldset>
             <fieldset class="login">
-            <li>로그인</li>
+            <li class="menuLi">로그인</li>
             </fieldset>
         </ul>
     </div>
 <hr>
-<div class="mainArea">
 
-    <div class="banner">
-        <fieldset class="bannerBox">배너박스</fieldset>
+<div class="myPageBox">
+
+    <div class="menuArea">
+    <p class="menuP">내 정보 관리</p>
+    <ul class="myPageUl">
+        <li class="myPageLi">프로필 수정</li>
+        <li class="myPageLi">내 정보 수정</li>
+        <li class="myPageLi">포인트 관리</li>
+    </ul>
+    <p class="menuP">내 게시글 관리</p>
+    <ul class="myPageUl">
+        <li class="myPageLi">1:1 문의 내역</li>
+        <li class="myPageLi">내 게시물 관리</li>
+        </ul>
     </div>
-    <h2>게시판 목록</h2>
-
-        <div class="div1">
-            <table class="tb1">
-                <tr>
-                    <td>
-                        목록1
-                    </td>
-                    <td>
-                        목록2
-                    </td>
-                    <td>
-                        목록3
-                    </td>
-                    <td rowspan="2" id="profile">
-                        프로필 </td>
-                <tr >
-                    <td>
-                        목록4
-                    </td>
-                    <td>
-                        목록5
-                    </td>
-                    <td>
-                        목록6
-                    </td>
-                </tr>
-            </table>
-        </div>
+<div class="myPageContentDiv">
+<h1>마이페이지</h1>
+<h3>프로필 수정</h3>
+<form>
+    <label name="pass"></label>
+    <input type="text" name="pass">
+</form>
+</div>
+</div>
 
 
-    </table>
 </div>
 </div>
 </body>
