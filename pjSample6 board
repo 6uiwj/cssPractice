@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+    </head>
+    <body>
+        <div class="bg"> 
+        <style>
+  @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Sans+KR&display=swap');
+        body{
+                background-color: #fff;
+                font-family: 'Gowun Dodum', sans-serif;
+            }
+            .bg{
+                color:#f7c757;
+                font-weight: 600;
+                
+            }
+
+            #subject{
+                color:#f7c757;
+                font-weight: 900;
+                font-size:30px;
+            }
+            .menuUl {
+                display: flex;
+            }
+            .menuLi {
+                display: inline; /* 또는 display: inline-block; */
+                margin-right: 40px; /* 각 리스트 아이템 사이의 여백 조절 */         
+                margin-top: 15px;
+                font-size: 20px;
+            
+        
+
+
+                 }
+            .menu{
+                height: 70px;
+                background-color: #fff;
+                margin-top:5px;
+                border-radius: 3px;
+                color: #000;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+                
+            }
+            .tb1 {
+                text-align: center;
+                display: inline-block;
+
+                display: flex;
+                justify-content: center;
+                border-spacing: 20px;
+                color:#000;
+
+            }
+
+ 
+
+            .search {
+                width: 500px;
+                border-radius: 6px;
+                justify-content: center;
+                margin-top:8px;
+                height: 30px;
+                background-color: #faf9f7;
+            }
+            #sForm {
+                color: #000;
+            }
+            .div1 {
+                white-space: nowrap; /* 줄 바꿈 방지 */
+                display: flex;
+                justify-content: center;
+            }
+            
+            .banner {
+                display: flex;
+                justify-content: center;
+            }
+            .bannerBox {
+                height: 250px;
+                width: 1250px;
+                margin-top:20px;
+                margin-bottom:50px;
+                display: flex;
+                background-color: #fff;
+                border-radius: 5px;
+                border: 1px solid #000;
+            }
+
+            #profile {
+                height: 500px;
+                background-color: #fff;
+            }
+            hr {
+                border:1px solid;
+                opacity: 0.3;
+            }
+            .login{
+                background-color:#f7c757;
+                border:1px solid #f7c757;
+                border-radius: 10px;
+                height: 30px;
+                font-weight: 400;
+                color: #fff;
+                margin-top: 7px;
+            }
+            
+            h2 {
+                color:black;
+                margin-left:320px;
+            }
+
+
+            .menuP {
+                font-size: 25px;
+                margin-left: 50px;
+                margin-top:40px;
+            }
+
+            .myPageLi{
+                font-size:20px;
+                margin:30px;
+                list-style: circle;
+                margin-left:70px;
+
+                
+            }
+            .myPageContentDiv {
+                display: inline-block;
+                width:1000px;
+                height:800px;
+                padding-left: 50px;
+            }
+            .menuArea  {
+                border:1px solid;
+                width:350px;
+                height: 800px;
+                border-radius: 10px;
+            }
+
+            .myPageBox {
+                display: flex;
+                justify-content: center;
+                margin-top:100px
+            }
+
+            .menuArea, .myPageContentDiv {
+
+            }
+
+            .myPageUl {
+                margin-bottom: 70px;
+            }
+            td, tr {
+                border: 1px solid;
+
+            }
+
+            thead{
+                font-weight: 400;
+                border: none;
+            
+            }
+
+            tbody {
+                font-weight: 600;
+                
+
+            }
+
+            .boardT {
+                 border:none;
+                width:1000px;
+                border: none;
+                font-size: 20px;
+                color:#808080;
+                border-collapse: collapse;
+                margin-bottom: 5px;
+        
+             
+
+            }
+  
+            .tableDiv {
+                display: flex;
+                text-align: center;
+                justify-content: center;
+            }
+            .content {
+                
+                text-align: center;
+
+                margin: 100px;
+            }
+            .navT {
+                border:1px solid;
+                border-collapse: collapse;
+                width:800px;
+                height: 50px;
+            }
+
+
+            .navDiv{
+                margin-top:50px;
+                display:flex;
+                justify-content: center;
+            }
+            #contentTd {
+                height:70px;
+                text-align: left;
+                padding-left:20px;
+            
+            }
+
+            .boardT tbody tr,
+            .boardT tbody td {
+                 border: none; 
+  }
+  #authorTd{
+    text-align: left;
+    padding-left: 20px;
+    background-color:#dfdfdf;
+    border: 1px solid #dfdfdf;
+
+  }
+  #numTr{
+    border-bottom:1px solid #d8d8d8;
+    text-align: right;
+    padding-right: 20px;
+  }
+  #numTd{
+    padding-right: 20px;
+    font-size: 12px;
+  }
+        </style>
+<div class="menu">
+        <ul class="menuUl">
+            <li class="menuLi" id="subject">Hello World</li>
+            <li class="menuLi">메뉴1</li>
+            <li class="menuLi">메뉴1</li>
+            <li class="menuLi">메뉴1</li>
+            <li class="menuLi">메뉴1</li>
+            <fieldset class="search">
+            <li class="menuLi" id="sForm">검색</li>
+            </fieldset>
+            <fieldset class="login">
+            <li class="menuLi">로그인</li>
+            </fieldset>
+        </ul>
+    </div>
+<hr>
+
+
+<div class="content">
+<div><h1>커뮤니티</h1></div>
+<div class="tableDiv">
+    <table class="boardT">
+        <thead>
+            <td id="authorTd">    도토리 
+               </td>
+
+    </thead>
+    <tbody>
+        <tr id="contentTr">
+            <td colspan="2" id="contentTd">  으앙 넘 ㅜ힘들다 </td>
+        </tr>
+        <tr id="numTr">
+            <td colspan="2" id="numTd">조회수:  256  | 작성일 : 2024.02.26</td>
+        </tr>
+      
+      
+    </tbody>
+    </table>
+
+
+</div>
+<div class="tableDiv">
+    <table class="boardT">
+        <thead>
+            <td id="authorTd">    태평양넙치 
+             </td>
+
+    </thead>
+    <tbody>
+        <tr id="contentTr">
+            <td colspan="2" id="contentTd">  졸려죽겠다 </td>
+        </tr>
+        <tr id="numTr">
+            <td colspan="2" id="numTd">조회수: 256  | 작성일 : 2024.02.26</td>
+        </tr>
+      
+      
+    </tbody>
+    </table>
+
+
+</div><div class="tableDiv">
+    <table class="boardT">
+        <thead>
+            <td id="authorTd">    대서양피라냐 
+             </td>
+
+    </thead>
+    <tbody>
+        <tr id="contentTr">
+            <td colspan="2" id="contentTd">  오늘 5호선 널널하게 해주세요 </td>
+        </tr>
+        <tr id="numTr">
+            <td colspan="2" id="numTd">조회수: 256  | 작성일 : 2024.02.26</td>
+        </tr>
+      
+      
+    </tbody>
+    </table>
+
+
+</div><div class="tableDiv">
+    <table class="boardT">
+        <thead>
+            <td id="authorTd">    작성자 
+            </td>
+
+    </thead>
+    <tbody>
+        <tr id="contentTr">
+            <td colspan="2" id="contentTd">  7700번 버스 빨리오게 해주세요 </td>
+        </tr>
+        <tr id="numTr">
+            <td colspan="2" id="numTd">조회수: 256  | 작성일 : 2024.02.26</td>
+        </tr>
+      
+      
+    </tbody>
+    </table>
+
+
+</div><div class="tableDiv">
+    <table class="boardT">
+        <thead>
+            <td id="authorTd">    작성자 
+             </td>
+
+    </thead>
+    <tbody>
+        <tr id="contentTr">
+            <td colspan="2" id="contentTd">  집에가고싶다 </td>
+        </tr>
+        <tr id="numTr">
+            <td colspan="2" id="numTd">조회수: 256  | 작성일 : 2024.02.26</td>
+        </tr>
+      
+      
+    </tbody>
+    </table>
+
+
+</div>
+<div class="navDiv">
+<table class="navT">
+    <tr>
+        <td>prev</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>next</td>
+
+    
+    </tr>
+        </table>
+    </div> 
+</div>
+</body>
+</html>
